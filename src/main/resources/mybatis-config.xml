@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+    <!--//自动映射行为默认是：自动映射数据库字段名与属性名相同的字段，设置为NONE是关闭自定映射,FULL是全映射-->
+    <settings>
+        <setting name="autoMappingBehavior" value="FULL"/>
+    </settings>
+    <typeAliases>
+        <!--自动找到这个包，为这个包下的所有类起与包名相同的（大小写不限）别名，调用别名自动加载包的路径-->
+        <package name="cn.xpj.pojo"/>
+    </typeAliases>
+</configuration>
